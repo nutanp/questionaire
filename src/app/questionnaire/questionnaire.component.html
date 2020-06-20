@@ -1,0 +1,69 @@
+
+<header>
+    
+  <div class="container-fluid">
+    <div class="row align-items-center" ng-reflect-klass="row align-items-center" ng-reflect-ng-class="[object Object]">
+      <div class="col-lg-3 logo-text">
+        <a class="navbar-brand p-0" href="#">
+          <span class="site-logo">
+            <img height="30" src="assets/images/logo.svg" width="56">
+          </span>
+          <span class="site-title">
+            <h6>CISCO READY </h6>
+            <h2>CCMM-Questionnaire</h2>
+          </span>
+        </a>
+      </div>
+
+      <div class="col-lg-9 pl-0">
+
+      </div>
+    </div>
+  </div>
+
+</header>
+<div class="headerBlue " style="display:inline-block;background-color:#005072;width:100%;">
+  <!--new header-->
+  <div class="subHeaderWrap align-items-center container-fluid" style="padding-top: 10px;padding-bottom: 10px;">
+    <h2>{{this.APIservice.SavName}}</h2>
+   
+  </div>
+
+</div>
+<div>
+    <ul class="nav nav-tabs container-fluid ">
+        <li class="active"><a data-toggle="tab" href="#Networking">Networking
+        </a></li>
+        <li><a data-toggle="tab" href="#security">Security - Cloud & Apps </a></li>
+       <!-- <li><a data-toggle="tab" href="#menu3">form </a></li>-->
+      </ul>
+<!-- <ul class="nav nav-tabs container-fluid ">
+  <li ><a routerLink="/networking" routerLinkActive="active" >Networking
+  </a></li>
+  <li><a routerLink="/security" routerLinkActive="active" >Security - Cloud & Apps </a></li>
+  <li><a data-toggle="tab" href="#menu3">form </a></li>
+</ul> -->
+
+<div class="row  container-fluid">
+  <div class="col-md-8"></div>
+  <div class="col-md-2"></div>
+  <div class="col-md-1">
+    <button class="btn btn-white" (click)="Save()"  >Save Draft</button>
+  </div>
+  <div class="col-md-1">
+    <button class="btn submitSurvey" (click)="Save()" >Submit</button>
+  </div>
+</div>
+<div class="tab-content">
+   <div id="Networking" class="tab-pane fade in active">
+    <app-networking></app-networking>
+  </div>
+  <div id="security" class="tab-pane fade">
+    <app-security ></app-security>
+ 
+  </div>  
+   <!-- <router-outlet></router-outlet>  -->
+ <!-- <div id="menu3" class="tab-pane fade">
+  <app-template-drivenform></app-template-drivenform>-->
+</div>
+</div>

@@ -1,0 +1,198 @@
+[
+    {
+    	"SAV_KEY":"1",
+        "Q_VAR": "Q_VAR1",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_VAR1",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_DIRECT_INTERNET_CONNECTION_YES",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "1_3_Net_branch",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_WAN_CONNECTIVITY_CUSTOMER",
+        "ANS_VAL": "TRUE"
+    },
+    {
+    	"SAV_KEY":"1",
+        "Q_VAR": "Q_VAR1",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "SD-WAN functionality",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_BRANCH_4-5G_YES",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_NEED_ASSET_TRACKING_YES",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_GUEST_EXPERIENCE_APPLICATIONS_YES",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_WEBAPP_THREATS_SERVICES_STACK_CHANGES_NA",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_RELIABILTY_REQUIREMENT_SOMEWHAT",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_RELIABLE_SERVICE_COVERAGE_15",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_NETWORK_ISSUES_CAUSE_CARRIER",
+        "ANS_VAL": "TRUE"
+    },
+    
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_CONNECTIVITY_ISSUES_SOLUTION_TECHNICAL",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_CONNECTIVITY_ISSUES_IMPACT",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "SOMEWHAT SERIOUS",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_CONNECTIVITY_ISSUES_SOLUTION_TECHNICAL",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_VAR",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "FREQUENTLY",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_NETWORK_INCREASE_MANAGEMENT",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_NETWORK_INCREASE_MANAGEMENT_DASHBOARD",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "Q_SECURITY_RISK_FACTOR_P1",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_SECURITY_RISK_FACTOR_P1_C_LEVEL",
+        "ANS_VAL": "TRUE"
+    },
+    
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_SECURITY_RISK_FACTOR_P2",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_SECURITY_RISK_FACTOR_P2_DUE_DILIGENCE",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_NEW_NETWORK_AREA",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_NEW_NETWORK_AREA_IOT",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_CLOUD_USE",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_CLOUD_USE_SOMEWHAT",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_APPLICATION_PERFORMANCE",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_APPLICATION_PERFORMANCE_FAST",
+        "ANS_VAL": "TRUE"
+    },
+    
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_NETWORK_MANAGEMENT",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_NETWORK_MANAGEMENT_OPS",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_BYOD_CAPABILITY",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_BYOD_CAPABILITY_SELF",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_WIRELESS_DEVICE_INSIGHT",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_WIRELESS_DEVICE_INSIGHT_MEDIUM",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_Q_CENTRALLY_MANAGED_WIRELESS",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_CENTRALLY_MANAGED_WIRELESS_CENTRALLY",
+        "ANS_VAL": "TRUE"
+    },
+    {
+        "SAV_KEY":"1",
+        "Q_VAR": "BQ_WIRELESS_COVERAGE",
+        "Q_VAL": "TRUE",
+        "ANS_VAR": "BQ_WIRELESS_COVERAGE_AVERAGE",
+        "ANS_VAL": "TRUE"
+    }
+
+    
+    
+    
+]

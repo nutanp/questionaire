@@ -1,0 +1,121 @@
+<form #userForm="ngForm" (ngSubmit)="onFormSubmit($event,userForm.value)">
+    <div class="row container-fluid">
+        <div class="col-md-4" style="padding: 10px 15px">
+        </div>
+        <div class="col-md-4">
+        </div>
+        
+        <div class="col-md-4">
+            <p>You completed {{progress}} out of {{QidCount}} Networking Questions</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" [attr.aria-valuenow]="progress" aria-valuemin="0" aria-valuemax ="100" 
+                style="min-width: 0em;max-width: 100em;" [style.width]="progresspercentage + '%'">
+                 {{progresspercentage}}%
+                </div>
+            </div>
+          </div>
+        
+    </div>  
+  
+<div id="accordion" class="container-fluid" >  
+
+  <div class="panel panel-default"  *ngFor="let tabItem of StaticJsonQuest">
+  <div class="panel-heading" role="tab" id="headingOne">
+    <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{tabItem.id}}" aria-expanded="false" attr.aria-controls="collapse{{tabItem.id}}">
+        {{tabItem.tabTitle}}        
+      </a>
+    </h4>
+  </div>
+
+  <div id="collapse{{tabItem.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div *ngFor="let question of tabItem.content">
+          <div class="questtionText">{{question.QText}}</div>
+           <!-- <input type="text" name="{{question.QVar}}" value="{{question.QVar}}"> -->
+          <div *ngIf="question.type=='inputtext'">
+              <ng-container  *ngFor="let answrBase of question.Answer">
+                <div class="answerCheck"> 
+                  <label for="{{answrBase.ansVar}}" style="font-weight: normal">{{answrBase.ansText}}</label>
+                  <input type="text" id="answrBase.ansVar"  (onChanged)="onSelectionChange(answrBase,question.QVar)" >
+                </div>
+                </ng-container>
+              </div>
+
+          <div *ngIf="question.type=='radio'">
+          <ng-container *ngFor="let answrBase of question.Answer">
+              <div class="answerCheck"> 
+                    <label for="{{answrBase.ansVar}}" class="container">{{answrBase.ansText}}
+                    
+                        <input type="radio" 
+                              [id]   = "answrBase.ansVar"
+                              (click)="onSelectionChange(answrBase,question.QVar)"
+                              name="{{question.QVar}}"
+                              
+                              *ngIf = "answrBase.ansVal === 'TRUE'"
+                              checked
+                             
+                      />
+                      <input type="radio" 
+                              [id]   = "answrBase.ansVar"
+                              (click)="onSelectionChange(answrBase,question.QVar)"
+                              name="{{question.QVar}}"
+                              *ngIf = "answrBase.ansVal !== 'TRUE'"
+                      
+                      />
+                     
+                        <span class="checkmark"></span>
+                      </label>
+                               
+              </div>
+          </ng-container>
+       </div>
+   
+       <div *ngIf="question.type=='check'">
+          <div class="answerCheck">
+            
+            
+              <ng-container *ngFor="let answrBase of question.Answer">
+                  <div>     
+                   <label  class="containerforcheckbox">{{answrBase.ansText}}
+                      <input type="checkbox"
+                       [value]= "answrBase.ansText"  
+                        name="{{answrBase.ansVar}}" 
+                        *ngIf = "answrBase.ansVal === 'TRUE'"
+                        checked
+                        (change)="onSelectionChange(answrBase,question.QVar)" 
+                         />
+                         <input type="checkbox"
+                         [value]= "answrBase.ansText"  
+                          name="{{answrBase.ansVar}}" 
+                          *ngIf = "answrBase.ansVal !== 'TRUE'"
+                          
+                          (change)="onSelectionChange(answrBase,question.QVar)" 
+                           />
+                      <span class="checkmarkforcheckbox"></span>
+                    </label>
+                  </div> 
+                
+   
+                     <!--<div>                    
+                         <label for="timeslot">
+                          <input type="checkbox"   [value]= "answrBase.ansText"   name="{{question.QVar}}"  ngModel />{{answrBase.ansText}}
+                       </label>
+                      </div>-->
+                      </ng-container>
+              
+          </div>
+        </div>
+     
+      </div>
+      
+     
+    </div>
+  </div>
+</div>
+</div>
+<div>
+  <button id="Networksubmit" style="visibility: hidden;"></button>
+
+</div>
+</form>

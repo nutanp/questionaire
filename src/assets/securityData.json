@@ -1,0 +1,810 @@
+[  
+   {  
+      "id":"sec-1",
+      "tabTitle":"Customer Profile",
+      "content":[  
+         {  
+            "QVar":"Q_SECURITY_RISK_FACTOR_P1",
+            "QText":"How is your customer organized around Cyber Security at the leadership level.(choose as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P1_C_LEVEL",
+                  "ansText":"There is a C-level executive accountable for cyberthreat risk management —and are responsible for overseeing development of risk programs",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P1_COMMITTEE",
+                  "ansText":"There is an established committee consisting of senior management that is dedicated to the issue of cyber risk",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P1_RISK_MITIGATION",
+                  "ansText":"Security risk mitigation is evident in regular updates, budget analysis, and challenging questions to management",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P1_IT_STAFF",
+                  "ansText":"Senior IT Staff stays up-to-date on the latest cyber trends, threats, and implications for their business",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P1_REPORTING",
+                  "ansText":"Clear reporting and decision paths exist for action and communication in response to a security failure or accident",
+                  "ansVal":"false"
+               }
+               
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_SECURITY_RISK_FACTOR_P2",
+            "QText":"Your customer's position on managing Cyber Security risk with external vendors and consultants involves: (choose as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P2_DUE_DILIGENCE",
+                  "ansText":"Cyber risks are seen as part of the due diligence process for critical outsourcing and subcontracting arrangements",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P2_AUDIT",
+                  "ansText":"All third parties are engaged through a consistent process, and policies and controls are in place (e.g., right to audit), aligned to the organization’s expectations and risk tolerance",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P2_TRAINING",
+                  "ansText":"Third parties receive specific training on cyber issues, tailored to relevant needs and risks",
+                  "ansVal":"false"
+               },
+			    {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P2_PROGRAM",
+                  "ansText":"They have a risk management program that includes profiling and assessing all material third-party relationships and information flows",
+                  "ansVal":"false"
+               },
+			    {  
+                  "ansVar":"BQ_SECURITY_RISK_FACTOR_P2_PROCESS",
+                  "ansText":"Processes are in place to ensure timely notification of cyber incidents from third parties",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_ACCESS_SECURITY_CONTROL",
+            "QText":"What best represents your customer's needs for security, and data privacy:",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_ACCESS_SECURITY_CONTROL_LIST",
+                  "ansText":"All employees require similar access to corporate data and information",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_ACCESS_SECURITY_CONTROL_POLICY",
+                  "ansText":"Employees have specific security needs based on roles / responsibility",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_ACCESS_SECURITY_CONTROL_USER",
+                  "ansText":"Each worker has unique privacy needs and access",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_ACCESS_SECURITY_CONTROL_REGULATED",
+                  "ansText":"Needs are set by strict industry regulations (Financial / HIPAA etc)",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_ENDPOINT_SECURITY_PROFILE",
+            "QText":"Please choose the experience that best represents how employee computers and devices are secured:",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_ENDPOINT_SECURITY_PROFILE_RIGID",
+                  "ansText":"RIGID: Devices are pushed security updates automatically. If device is out of compliance – it can not gain access to the network.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_ENDPOINT_SECURITY_PROFILE_COMPLIANT",
+                  "ansText":"COMPLIANT: Devices are pushed security updates, but users have to confirm / accept to install them. Users can opt to “install later”. IT will remind us if our device needs to be updated.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_ENDPOINT_SECURITY_PROFILE_SELF_DIRECTED",
+                  "ansText":"SELF-DIRECTED: Users have complete control over patching their devices and applications.",
+                  "ansVal":"false"
+               }
+            
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+        
+      ]
+   },
+   {  
+      "id":"sec-2",
+      "tabTitle":"Edge Protection",
+      "content":[  
+         {  
+            "QVar":"sec2-1",
+            "QText":"With regards to protecting the internal network from external threats, what technologies does your customer utilize?(choose as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_FIREWALL",
+                  "ansText":"Blocking access at the port level (Firewalls, Router Access Lists)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_DDOS",
+                  "ansText":"Prevention of Bandwidth-Based Attacks (DDoS services)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_DPI",
+                  "ansText":"Deep Packet Inspection (Snort, SolarWinds)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_CONTENT",
+                  "ansText":"Content Filtering Services (usually through external providers)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_HONEYPOT",
+                  "ansText":"Threat Containment and Quarantine (Honeypots, False-Fronts)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_NETFLOW",
+                  "ansText":"Traffic Analysis and Pattern Matching (Netflow, IPFIX)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EDGE_PROTECTION_GATE_KEEPER",
+                  "ansText":"Traffic Gate Keepers (Proxy Servers, Service Binders)",
+                  "ansVal":"false"
+               }
+
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_LAPTOP_RESTORATION",
+            "QText":"How frequently does your customer's IT department have to re-image or re-build laptops due to malware intrusion or other security issues?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_LAPTOP_RESTORATION_INFREQUENT",
+                  "ansText":"INFREQUENT: Less than 5% of laptops rebuilt yearly",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_LAPTOP_RESTORATION_AVERAGE",
+                  "ansText":"AVERAGE: About 5% of laptops rebuilt yearly",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_LAPTOP_RESTORATION_FREQUENT",
+                  "ansText":"FREQUENT: More than 5% of laptops rebuilt yearly",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   },
+   {  
+      "id":"sec-3",
+      "tabTitle":"LAN & Wireless",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_LAN",
+            "QText":"If an employee plugs in a personal or unknown device to a network port, what would the outcome be?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_MANUAL",
+                  "ansText":"Device would need to manually have an IP address / subnet entered",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_GRANTED",
+                  "ansText":"Device would receive an IP and be granted access to the LAN",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_GUEST",
+                  "ansText":"Device would receive an IP for a guest network and be isolated from the LAN",
+                  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_802.1",
+                  "ansText":"Employee would receive a prompt for User / Pass (802.1x) authentication",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_LAN_NOTIFICATION",
+            "QText":" In the previous example, would IT be notified either through reports or alerts that an unknown device has joined the network?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_NOTIFICATION_YES",
+                  "ansText":"YES",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_NOTIFICATION_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_NOTIFICATION_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+        
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_LAN_DEVICE_PROFILE",
+            "QText":"When an employee joins a device to the network (either personal or IT issued), will their network automatically quarantine it, if the device is running applications or OS versions that are considered \"non-compliant\"?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_DEVICE_PROFILE_YES",
+                  "ansText":"YES",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_DEVICE_PROFILE_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_LAN_DEVICE_PROFILE_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_WIFI",
+            "QText":"What is required for a guest or an employee to gain access to your customer's WIFI network?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SEPARATE",
+                  "ansText":"Separate Guest and Staff WIFI networks exist, with separate authentication mechanisms using a passphrase for network access",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_EMPLOYEE_AUTHENTICATION",
+                  "ansText":"Employees to use a username / password to join the work network. Guests have a separate network",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SINGLE_WIFI",
+                  "ansText":"They have what appears to be a single WIFI network – and devices are steered to the correct network automatically when authenticating. Authentication happens automatically, or in rare cases a user ID + password is required for employees",
+                  "ansVal":"false"
+               },
+               {  
+                "ansVar":"BQ_INTERNAL_THREATS_WIFI_NA",
+                "ansText":" N/A",
+                "ansVal":"false"
+             }
+              
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_WIFI_NOTIFICATION",
+            "QText":"With regards to WIFI activity, would IT be notified either through reports or alerts that a new / unknown device has joined the network?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_NOTIFICATION_YES",
+                  "ansText":"YES",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_NOTIFICATION_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_NOTIFICATION_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_INTERNAL_THREATS_WIFI_SPOOF",
+            "QText":" If an employee or guest were to setup their own WIFI access point in a building, and give it the same name as your customer's network, would their IT be able to detect this?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SPOOF_AUTO",
+                  "ansText":"YES – and the AP's used would automatically detect and contain as well",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SPOOF_MANUAL",
+                  "ansText":"YES BUT – only through reports viewed later via human intervention",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SPOOF_NO",
+                  "ansText":"NO – they’d have no idea",
+                  "ansVal":"false"
+               },
+               
+               {  
+                  "ansVar":"BQ_INTERNAL_THREATS_WIFI_SPOOF_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   },
+   {  
+      "id":"sec-4",
+      "tabTitle":"Cloud & Apps",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_CLOUD_SECURITY",
+            "QText":"For any external Cloud hosted apps and tools (dropbox etc) that are purchased via a “site-wide” or “enterprise” license, what describes the method in which employees access those services?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_SEPARATE",
+                  "ansText":"Employees have separate Usernames / Passwords for each service and self-manage",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_NETWORK",
+                  "ansText":"Employees use their network usernames / passwords, and don’t manage their own",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_TOKEN",
+                  "ansText":"There is a multi-part authentication mechanism utilizing a token, or SMS verification",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_VARIES",
+                  "ansText":"It varies – sometimes it is individually managed, other times it uses our corporate network authentication",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_SECURITY_NA",
+                  "ansText":"N/A",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_WEBAPP_THREATS",
+            "QText":"If an employee wanted to use a personal device or computer on the corporate network, what would best describe their experience?",
+            "Answer":[  
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_HOSTED_ENVIRONMENT_CHANGES",
+                    "SubQText":"Hosted Environment Configuration Changes" ,
+                    "SubAnswer":[   
+                                    {  
+                                        "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_CHANGES_NA",
+                                        "ansText":"N/A",
+                                        "ansVal":"false"
+                                    },
+                                    {  
+                                        "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_CHANGES_LOW",
+                                        "ansText":"Low Visibility",
+                                        "ansVal":"false"
+                                    },
+                                    {  
+                                        "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_CHANGES_MEDIUM",
+                                        "ansText":"Medium Visibility",
+                                        "ansVal":"false"
+                                    },
+                                    {  
+                                        "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_CHANGES_HIGH",
+                                        "ansText":"high Visibility",
+                                        "ansVal":"false"
+                                    }
+                                ]
+                }  ,
+                
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_HOSTED_ENVIRONMENT_PERFORMANCE_ANOMALIES",
+                    "SubQText":"Hosted Environment Performance Anomalies (Memory / CPU run away)" ,
+                    "SubAnswer":[   
+                          {  
+                            "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_PERFORMANCE_ANOMALIES_NA",
+                            "ansText":"N/A",
+                            "ansVal":"false"
+                                },
+                                {  
+                                    "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_PERFORMANCE_ANOMALIES_LOW",
+                                    "ansText":"Low Visibility",
+                                    "ansVal":"false"
+                                },
+                                {  
+                                    "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_PERFORMANCE_ANOMALIES_MEDIUM",
+                                    "ansText":"Medium Visibility",
+                                    "ansVal":"false"
+                                },
+                                {  
+                                    "ansVar":"BQ_WEBAPP_THREATS_HOSTED_ENVIRONMENT_PERFORMANCE_ANOMALIES_HIGH",
+                                    "ansText":"high Visibility",
+                                    "ansVal":"false"
+                                }
+                                            ]
+                            } ,
+                {
+                            "SubQVar":"BQ_Q_WEBAPP_THREATS_ROOT_CERTIFICATES",
+                            "SubQText":"Root Certificate Changes" ,
+                            "SubAnswer":[   
+                                {  
+                                "ansVar":"BQ_WEBAPP_THREATS_ROOT_CERTIFICATES_NA",
+                                "ansText":"N/A",
+                                "ansVal":"false"
+                            },
+                            {  
+                                "ansVar":"BQ_WEBAPP_THREATS_ROOT_CERTIFICATES_LOW",
+                                "ansText":"Low Visibility",
+                                "ansVal":"false"
+                            },
+                            {  
+                                "ansVar":"BQ_WEBAPP_THREATS_ROOT_CERTIFICATES_MEDIUM",
+                                "ansText":"Medium Visibility",
+                                "ansVal":"false"
+                            },
+                            {  
+                                "ansVar":"BQ_WEBAPP_THREATS_ROOT_CERTIFICATES_HIGH",
+                                "ansText":"high Visibility",
+                                "ansVal":"false"
+                            }
+                                        ]
+                },
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_ROOT_ANOMALOUS_NETWORK_EVENTS",
+                    "SubQText":"Anomalous Network Events (unplanned traffic spikes)" ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_ROOT_ANOMALOUS_NETWORK_EVENTS_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_ROOT_ANOMALOUS_NETWORK_EVENTS_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_ROOT_ANOMALOUS_NETWORK_EVENTS_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_ROOT_ANOMALOUS_NETWORK_EVENTS_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }   
+                ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_DNS_REDIRECT",
+                    "SubQText":"DNS redirect changes" ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_DNS_REDIRECT_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_DNS_REDIRECT_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_DNS_REDIRECT_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_DNS_REDIRECT_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }         ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_CORRUPTED_CONTENT",
+                    "SubQText":"Corrupted Content " ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_CORRUPTED_CONTENT_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_CORRUPTED_CONTENT_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_CORRUPTED_CONTENT_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_CORRUPTED_CONTENT_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }         ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_SERVICES_STACK_CHANGES",
+                    "SubQText":"Version changes on Environment Service Stacks (LAMP / .NET / etc)" ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_SERVICES_STACK_CHANGES_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_SERVICES_STACK_CHANGES_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_SERVICES_STACK_CHANGES_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_SERVICES_STACK_CHANGES_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }         ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_VM_CHANGES",
+                    "SubQText":"Changes to VM image names, virtual hosts, VIPs  " ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CHANGES_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CHANGES_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CHANGES_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CHANGES_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                },
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_VM_CONSOLE_ANOMALIES",
+                    "SubQText":"Management console anomalies (VMs)" ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CONSOLE_ANOMALIES_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CONSOLE_ANOMALIES_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CONSOLE_ANOMALIES_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_VM_CONSOLE_ANOMALIES_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }         ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_HYPERVISOR_CONFLICT",
+                    "SubQText":"Hypervisor conflict notifications" ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_CONFLICT_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_CONFLICT_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_CONFLICT_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_CONFLICT_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }         ,
+                {
+                    "SubQVar":"BQ_Q_WEBAPP_THREATS_HYPERVISOR_ESCAPE",
+                    "SubQText":"Hypervisor escape attempts " ,
+                    "SubAnswer":[    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_ESCAPE_NA",
+                        "ansText":"N/A",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_ESCAPE_LOW",
+                        "ansText":"Low Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_ESCAPE_MEDIUM",
+                        "ansText":"Medium Visibility",
+                        "ansVal":"false"
+                    },
+                    {  
+                        "ansVar":"BQ_WEBAPP_THREATS_HYPERVISOR_ESCAPE_HIGH",
+                        "ansText":"high Visibility",
+                        "ansVal":"false"
+                    }
+
+
+                ]
+                }               
+            ],
+            "type":"table",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_CLOUD_HOSTING_SECURITY",
+            "QText":"If your customer has enterprise applications they are hosting in external cloud providers (IaaS or Pass), how are they securing traffic to and from that hosted app? (choose all that apply)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_CLOUD_PROVIDERS",
+                  "ansText":"Cloud providers encrypted tunnel (app or appliance)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_CERTIFICATES",
+                  "ansText":"Signed certificates and self-managed tunnels",
+                  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_STATIC_VPN",
+                  "ansText":"Static VPN / IPSec Tunnels",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_VIRTUAL_TUNNEL",
+                  "ansText":"Virtual Tunneling & Switching provided by your VM environment (vSphere etc)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_OTHER",
+                  "ansText":"Other / A different technology you didn’t list",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_HOSTING_SECURITY_NA",
+                  "ansText":"N/A - Customer doesn't use cloud hosts",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_DNS_PROTECTION",
+            "QText":"If an employee were to try accessing a web-site that is known for phishing attacks, or installing trojans, what would happen?(choose all that apply)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_DNS_PROTECTION_WORK",
+                  "ansText":"If at work: They would be blocked by firewalls or proxies",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_DNS_PROTECTION_ANYWHERE",
+                  "ansText":"Anywhere: They have a DNS protection service or app that would block them",
+                  "ansVal":"false"
+               },
+               {  
+                "ansVar":"BQ_DNS_PROTECTION_ANTIVIRUS",
+                "ansText":"They have Antivirus / Anti-Malware protection that can protect both browser, and OS",
+                "ansVal":"false"
+             },
+             {  
+                "ansVar":"BQ_DNS_PROTECTION_NOTHING",
+                "ansText":"Nothing: They are exposed",
+                "ansVal":"false"
+             },
+             {  
+                "ansVar":"BQ_DNS_PROTECTION_DONT_KNOW",
+                "ansText":"DON'T KNOW",
+                "ansVal":"check"
+             }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_EMAIL_PROTECTION",
+            "QText":"How often does your customer receive unsolicited Spam emails, or emails from unscrupulous sources trying to “Fish” for information?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_EMAIL_PROTECTION_OFTEN",
+                  "ansText":"OFTEN – multiple times a week",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EMAIL_PROTECTION_SOMETIMES",
+                  "ansText":"SOMETIMES – a few times a month",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EMAIL_PROTECTION_NOT_MUCH",
+                  "ansText":"NOT MUCH – a few times a year",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_EMAIL_PROTECTION_RARELY",
+                  "ansText":"RARELY – if they see one, it is usually a test from IT",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   }
+]

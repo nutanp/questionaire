@@ -1,0 +1,875 @@
+[  
+    {  
+      "id":"1",
+      "tabTitle":"Customer Profile",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_TOTAL_WORKERS",
+            "QText":"What is your best estimate on the total number of workers?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_TOTAL_WORKERS",
+                  "ansText":"(including consultants, vendors, maintenance staff)",
+                  "ansVal":""
+               }
+            ],
+            "type":"inputtext",
+            "Q_ans":""
+         },
+		 {  
+            "QVar":"BQ_Q_KNOWLEDGE_WORKERS",
+            "QText":"What is your best estimate on the number of knowledge workers ?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_KNOWLEDGE_WORKERS",
+                  "ansText":"(workers who require personal computers and office applications to do their job)",
+                  "ansVal":""
+               }
+            ],
+            "type":"inputtext",
+            "Q_ans":""
+         },
+		 {  
+            "QVar":"BQ_Q_REMOTE_WORKERS",
+            "QText":"What is your best estimate on the number of remote workers employed by your customer?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_REMOTE_WORKERS",
+                  "ansText":"(workers who are not assigned a regular office location)",
+                  "ansVal":""
+               }
+            ],
+            "type":"inputtext",
+            "Q_ans":""
+         },
+		 {  
+            "QVar":"BQ_Q_INDUSTRY",
+            "QText":"At a high level, what industry-types describe the facilities your customer owns / operates?  (select as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_INDUSTRY_HEALTHCARE",
+                  "ansText":"Healthcare / Patient Care",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INDUSTRY_FINANCIAL",
+                  "ansText":"Wealth Management / Financial",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INDUSTRY_MANUFACTURING",
+                  "ansText":"Warehouse / Manufacturing / Logistics",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_INDUSTRY_RETAIL",
+                  "ansText":"Retail Sales / Brand Consumer Goods",
+                  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INDUSTRY_HOSPITALITY",
+                  "ansText":"Hotel / Restaurant / Hospitality",
+				  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INDUSTRY_ENERGY",
+                  "ansText":"Energy / Regulated Industry",
+				  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INDUSTRY_EDUCATION",
+                  "ansText":"Education / Private Institution",
+				  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INDUSTRY_GENERAL_OFFICE",
+                  "ansText":"General Office / Carpeted Space",
+				  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_INDUSTRY_HIGH_TECH",
+                  "ansText":"High Tech / Data Center / Colo",
+				  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         }
+      ]
+   },
+
+   {  
+      "id":"2",
+      "tabTitle":"Branch",
+      "content":[  
+         {  
+            "QVar":"Q_VAR",
+            "QText":"Please select what closest describes the FUNCTION of these branch-office environments:",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_VAR1",
+                  "ansText":"CUSTOMER FACING: Branches exist to fill a customer sales, support, or appointment function. Location staff is oriented to customer support and sales",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_VAR2",
+                  "ansText":"CAMPUS EXTENSION: Branches exist in close proximity to the main campus environment, and serve to create more space for growth. Most of these locations are in leased buildings, and are serving specific operational teams (HR, Finance, IT, Engineering)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_VAR3",
+                  "ansText":"REMOTE OFFICE: Branches are located in geographically diverse regions, and are staffed by a mix of support functions. Some of these locations may be “sales” oriented, but often will have other supporting functions in them as well (HR, IT, Engineering, Management).",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"Q_TYPE_OF_BRANCH_OTHER",
+                  "ansText":"OTHER",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_DIRECT_INTERNET_CONNECTION",
+            "QText":"At these locations, does the customer utilize a Direct-Internet connection from a commercial internet provider (such as Comcast, Verizon FIOS, ATT Uverse etc)?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_DIRECT_INTERNET_CONNECTION_YES",
+                  "ansText":"YES: Most branches are located in geographic areas that provide several options for internet connectivity",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_DIRECT_INTERNET_CONNECTION_NO",
+                  "ansText":"NO: Most branches are in difficult geographies, or locations that are not widely serviced by traditional internet providers",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_DIRECT_INTERNET_CONNECTION_DEPENDS",
+                  "ansText":"DEPENDS: Customer does not always have a clear option for a commercial internet provider vs private line or leased access",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"3_Net_branch",
+            "QText":"Please select what closest describes the FUNCTION of these branch-office environments:",
+            "Answer":[  
+               {  
+                  "ansVar":"1_3_Net_branch",
+                  "ansText":"CUSTOMER FACING: Branches exist to fill a customer sales, support, or appointment function. Location staff is oriented to customer support and sales",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"2_3_Net_branch",
+                  "ansText":"CAMPUS EXTENSION: Branches exist in close proximity to the main campus environment, and serve to create more space for growth. Most of these locations are in leased buildings, and are serving specific operational teams (HR, Finance, IT, Engineering)",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"3_3_Net_branch",
+                  "ansText":"REMOTE OFFICE: Branches are located in geographically diverse regions, and are staffed by a mix of support functions. Some of these locations may be “sales” oriented, but often will have other supporting functions in them as well (HR, IT, Engineering, Management).",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"4_3_Net_branch",
+                  "ansText":"OTHER",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_INTERNET_CONNECTION_USAGE",
+            "QText":"If such a commercial internet connection exists at a branch, how is it being used?<br>(select all that apply)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_CUSTOMER",
+                  "ansText":"Customer / Guest Internet",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_SDWAN",
+                  "ansText":"SD-WAN functionality",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_VPN",
+                  "ansText":"IPSec VPN to Corp Network",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_DIA",
+                  "ansText":"Direct Internet Access for Employees",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_PRIMARY",
+                  "ansText":"Primary method of connection",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_SECONDARY",
+                  "ansText":"Secondary / Redundant / Failover",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_CLOUD",
+                  "ansText":"Cloud optimization",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WAN_CONNECTIVITY_HOSTING",
+                  "ansText":"Localized web hosting",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_4G-5G_WIRELESS",
+            "QText":"Are any branch locations served by 4G / 5G wireless providers?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_BRANCH_4-5G_YES",
+                  "ansText":"YES",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_BRANCH_4-5G_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_BRANCH_4-5G_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_NEED_ASSET_TRACKING",
+            "QText":"Within the identified branch environments, does your customer require the ability to track the location of critical assets, personnel, customers, or products?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NEED_ASSET_TRACKING_YES",
+                  "ansText":"YES",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NEED_ASSET_TRACKING_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEED_ASSET_TRACKING_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_GUEST_EXPERIENCE_APPLICATIONS",
+            "QText":"Does your customer utilize any mobile applications that can be defined as “guest experience applications” (shopping apps, internal wayfinding, environment interactivity), that have been either self-created, or purchased from an external provider?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_GUEST_EXPERIENCE_APPLICATIONS_YES",
+                  "ansText":"YES",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_GUEST_EXPERIENCE_APPLICATIONS_NO",
+                  "ansText":"NO",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_GUEST_EXPERIENCE_APPLICATIONS_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_RELIABILTY_REQUIREMENT",
+            "QText":"How critical is reliable, fast internet access (Web / Email / External content) at these locations? ",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_RELIABILTY_REQUIREMENT_VERY",
+                  "ansText":"VERY IMPORTANT",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_RELIABILTY_REQUIREMENT_SOMEWHAT",
+                  "ansText":"SOMEWHAT IMPORTANT",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABILTY_REQUIREMENT_NOT",
+                  "ansText":"NOT IMPORTANT",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_RELIABLE_SERVICE_COVERAGE",
+            "QText":"What percentage of these locations would you say have reliable service when it comes to connectivity?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_NA",
+                  "ansText":"N/A",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_15",
+                  "ansText":"15%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_30",
+                  "ansText":"30%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_45",
+                  "ansText":"45%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_60",
+                  "ansText":"60%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_75",
+                  "ansText":"75%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_90",
+                  "ansText":"90%",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_RELIABLE_SERVICE_COVERAGE_100",
+                  "ansText":"100%",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_NETWORK_ISSUES_CAUSE",
+            "QText":"In thinking about locations that have connectivity and related network issues, which of these \"causes\" apply? (select as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_NETWORK",
+                  "ansText":"Network connectivity / Speed",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_CARRIER",
+                  "ansText":"Carrier service and support issues",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_IT_SUPPORT",
+                  "ansText":"IT support / Configuration",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_BUGS",
+                  "ansText":"Equipment age / bugs",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_GEO",
+                  "ansText":"Geographic constraints",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_CAUSE_DONT_KNOW",
+                  "ansText":"N/A or Don't know",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_SERVICE_PROVIDER_SLA",
+            "QText":"In regards to your communications services providers, do you have a contractual performance SLA (speed / uptime) in place?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_SERVICE_PROVIDER_SLA_YES",
+                  "ansText":"YES – There is a provider contract SLA, and my customer can claim discounts or enforce penalties if they are not met.",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_SERVICE_PROVIDER_SLA_NO",
+                  "ansText":"NO - There is not a SLA I am aware",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SERVICE_PROVIDER_SLA_DONT_POTENTIALLY",
+                  "ansText":"POTENTIALLY - There is an SLA but my customer lacks the ability to measure service in a manner that allows them to enforce it.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SERVICE_PROVIDER_SLA_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   },
+   {  
+      "id":"3",
+      "tabTitle":"Connectivity",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_CONNECTIVITY_ISSUES_IMPACT",
+            "QText":"When connectivity issues arise, how serious are the impacts to business in either operations, or revenue?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_IMPACT_VERY",
+                  "ansText":"VERY SERIOUS",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_IMPACT_SOMEWHAT",
+                  "ansText":"SOMEWHAT SERIOUS",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_IMPACT_NO",
+                  "ansText":"NO REAL DEFINABLE IMPACT",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_IMPACT_OTHER",
+                  "ansText":"OTHER",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_CONNECTIVITY_ISSUES_SOLUTION",
+            "QText":"If your customer identified \"VERY or SOMEWHAT SERIOUS\" above, how are they attempting to solve the issues?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_SOLUTION_TECHNICAL",
+                  "ansText":"Seeking new technical fixes",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_SOLUTION_SLA",
+                  "ansText":"Enforcement of service provider SLAs",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_SOLUTION_IT_SUPPORT",
+                  "ansText":"Increasing IT support staff",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_SOLUTION_MODERNIZE",
+                  "ansText":"Modernizing infrastructure",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CONNECTIVITY_ISSUES_SOLUTION_NA",
+                  "ansText":"Modernizing infrastructure",
+                  "ansVal":"N/A"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_NETWORK_ISSUES_FREQUENCY",
+            "QText":"How often do spikes in demand (bandwidth) cause issues on your customer's network?(example: holiday traffic, conference burden, social events)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_FREQUENCY_FREQUENTLY",
+                  "ansText":"FREQUENTLY",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_FREQUENCY_SOMETIMES",
+                  "ansText":"SOMETIMES",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_FREQUENCY_RARELY",
+                  "ansText":"RARELY",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_ISSUES_FREQUENCY_NEVER",
+                  "ansText":"NEVER",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_NETWORK_INCREASE_MANAGEMENT",
+            "QText":"How does your customer manage increases in network services (bandwidth / data / etc) demand?(choose as many as applicable)",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NETWORK_INCREASE_MANAGEMENT_DASHBOARD",
+                  "ansText":"Monitoring dashboards easily help identify trends before it is a problem",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_INCREASE_MANAGEMENT_BANDWIDTH",
+                  "ansText":"Ability to increase / decrease available bandwidth as needed",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_INCREASE_MANAGEMENT_QOS",
+                  "ansText":"QoS rules can be rolled out swiftly across the network as needed",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_INCREASE_MANAGEMENT_ISOLATE",
+                  "ansText":"Large bandwidth users are able to identified and isolated automatically",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_INCREASE_MANAGEMENT_CLOUD",
+                  "ansText":"Services are easily scaled through cloud or 3rd parties",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_SCALING_RELIABILIY",
+            "QText":"When rapidly scaling to meet temporary demand, how reliable is the solution?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_SCALING_RELIABILIY_VERY",
+                  "ansText":"VERY RELIABLE",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_SCALING_RELIABILIY_SOMEWHAT",
+                  "ansText":"SOMEWHAT RELIABLE",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SCALING_RELIABILIY_NOT",
+                  "ansText":"NOT RELIABLE",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_SCALING_RELIABILIY_NA",
+                  "ansText":"N/A",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"5_2_Net_Connectivity",
+                  "ansText":"Modernizing infrastructure",
+                  "ansVal":"N/A"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         }
+      ]
+   },
+   {  
+      "id":"4",
+      "tabTitle":"Saas Applications",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_DNA_DEMO_PERFORMED",
+            "QText":"Are you aware if there has been a demo of Cisco’s DNA or a “Network Intuitive” initiative at this customer in the last 6 months?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_DNA_DEMO_PERFORMED_YES",
+                  "ansText":"YES – There has been a recent demo",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_DNA_DEMO_PERFORMED_NO",
+                  "ansText":"NO – There has not been a recent demo",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_DNA_DEMO_PERFORMED_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_NEW_NETWORK_AREA",
+            "QText":"Within your customer's network operating environment, what areas would they feel comfortable in pursuing products and capabilities that are newer to market (v 1.x) ?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_RSW",
+                  "ansText":"Routers / Switches / WiFi",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_DASHBOARDS",
+                  "ansText":"Informational Dashboards",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_DATA_VISUALIZATION",
+                  "ansText":"Data Visualization Tools",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_APPLICATION_MANAGEMENT_SUITES",
+                  "ansText":"Application Environment & Management Suites",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_COLLABORATION",
+                  "ansText":"Employee Collaboration Tools",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_CLOUD",
+                  "ansText":"Cloud Migration Applications",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_IOT",
+                  "ansText":"IoT Devices",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_AUTOMATION",
+                  "ansText":"Automation Tools",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_NETWORK_SECURITY",
+                  "ansText":"Network Security",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NEW_NETWORK_AREA_NETWORK_IDENTITY",
+                  "ansText":"Identity Management",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"check",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_CLOUD_USE",
+            "QText":"In thinking of the day-to-day application needs of your customer's employees & contract-workers; how dependent are they on cloud-based SaaS applications? ",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CLOUD_USE_SOMEWHAT",
+                  "ansText":"SOMEWHAT: They use basic cloud-applications (like file sharing), but only as needed.",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_USE_MEDIUM",
+                  "ansText":"MEDIUM: They are using SaaS applications as much as standard apps, but work can happen without it.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_CLOUD_USE_VERY",
+                  "ansText":"VERY: Nearly all aspects of day-to-day work involves SaaS, business can not run without it.",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_APPLICATION_PERFORMANCE",
+            "QText":"When connected at an branch or remote office location, please select what describes the responsiveness and speed of the SaaS applications employees use:",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_APPLICATION_PERFORMANCE_FAST",
+                  "ansText":"FAST / Things are always very responsive, and perform as expected",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_APPLICATION_PERFORMANCE_AVERAGE",
+                  "ansText":"AVERAGE / Sometimes things feel very responsive, other times it feels sluggish",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_APPLICATION_PERFORMANCE_LOW",
+                  "ansText":"LOW / Things always feel sluggish, but eventually work gets done",
+                  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_APPLICATION_PERFORMANCE_SLOW",
+                  "ansText":"SLOW / Employees are frequently frustrated by performance and usability",
+                  "ansVal":"false"
+               },
+			   {  
+                  "ansVar":"BQ_APPLICATION_PERFORMANCE_NA",
+                  "ansText":"N/A",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   },
+   {  
+      "id":"5",
+      "tabTitle":"Operations",
+      "content":[  
+         {  
+            "QVar":"BQ_Q_NETWORK_MANAGEMENT",
+            "QText":"What best describes the IT organization required to fully manage and operate the customer's branch and corporate network?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_NETWORK_MANAGEMENT_SPECIALIZED",
+                  "ansText":"SPECIALIZED: IT Staff have specialized support functions relating to the environment. Each individual has control over specific elements of the network to maintain quality: Routing Experts, Switching Experts, WAN configuration, LAN connectivity",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_MANAGEMENT_OPS",
+                  "ansText":"OPS FORWARD: All aspects are managed by a defined “Operations team” (outsourced or FTE) who are responsible for end to end management of the environment. They utilize tools and systems that provide a dashboards and intelligence needed to respond.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_MANAGEMENT_ORCHESTRATED",
+                  "ansText":"ORCHESTRATED: New requirements and need are architecturally defined by a top-level “Strategy” team that oversees more than just the network, and is aligned to business needs. Any changes this team defines are implemented in real-time, and executed from a centralized point via strict change control. Problem resolution is supported by a virtual team (outsourced or FTE) as required by geography.",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_NETWORK_MANAGEMENT_OTHER",
+                  "ansText":"OTHER",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_BYOD_CAPABILITY",
+            "QText":"If an employee wanted to use a personal device or computer on the corporate network, what would best describe their experience?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_BYOD_CAPABILITY_SELF",
+                  "ansText":"SELF-ADMINISTERED: Employees can join it to the network using their corporate user ID and password, or join it using a webpage that allows them to “enroll” a new device for IT to manage.",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_BYOD_CAPABILITY_IT",
+                  "ansText":"IT ENROLLED: Employees can join it to the network as a guest, but can only use it as a corporate device if they were to contact IT or contact the help desk",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_BYOD_CAPABILITY_NOT_ALLOWED",
+                  "ansText":"NOT ALLOWED: Personal devices are not allowed to be used on the corporate network at this customer",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_BYOD_CAPABILITY_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_WIRELESS_DEVICE_INSIGHT",
+            "QText":"What describes your customer's insight into the devices, usage, and user profiles attached to the WIRELESS network?",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_WIRELESS_DEVICE_INSIGHT_LOW",
+                  "ansText":"LOW: They do not regularly generate reports on client add / changes happening on the network",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_WIRELESS_DEVICE_INSIGHT_MEDIUM",
+                  "ansText":"MEDIUM: They have defined specific rules and managed lists of what devices are allowed to access particular networks, and receive reports of any deviation",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WIRELESS_DEVICE_INSIGHT_HIGH",
+                  "ansText":"HIGH: Unrecognized wireless clients / users are automatically quarantined, so they can be investigated as needed",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_Q_CENTRALLY_MANAGED_WIRELESS",
+            "QText":"Please select a statement that represents how your customer manages their wireless infrastructure.",
+            "Answer":[  
+               {  
+                  "ansVar":"BQ_CENTRALLY_MANAGED_WIRELESS_INDIVIDUALLY",
+                  "ansText":"Each location is managed individually by local IT staff",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_CENTRALLY_MANAGED_WIRELESS_CENTRALLY",
+                  "ansText":"Wireless networks and policies are controlled and managed centrally",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         },
+         {  
+            "QVar":"BQ_WIRELESS_COVERAGE",
+            "QText":"What best describes your customer's ability to stay connected to Wi-Fi as you move about your office environment?",
+            "Answer":[  
+               {  
+                  "ansVar":"1_5_Net_Saas",
+                  "ansText":"POOR: Connectivity is reliable if they stay in one place",
+                  "ansVal":"FALSE"
+               },
+               {  
+                  "ansVar":"BQ_WIRELESS_COVERAGE_AVERAGE",
+                  "ansText":"AVERAGE: It works in areas people frequent, but not in places like stairwells and elevators",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WIRELESS_COVERAGE_EXCELLENT",
+                  "ansText":"EXCELLENT: Wherever an individual goes, they can get connected – even outdoors",
+                  "ansVal":"false"
+               },
+               {  
+                  "ansVar":"BQ_WIRELESS_COVERAGE_DONT_KNOW",
+                  "ansText":"DON'T KNOW",
+                  "ansVal":"false"
+               }
+            ],
+            "type":"radio",
+            "Q_ans":""
+         }
+      ]
+   }
+]
